@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --size: 50px; /* size of the cut */
+    --gap: 10px;  /* the gap */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* off canvas bootstrap inicio */
+
+
+@media (max-width: 991.98px) {
+    .offcanvas-collapse {
+        position: fixed;
+        top: 56px;
+        /* Height of navbar */
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #343a40;
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    }
+
+    .offcanvas-collapse.open {
+        visibility: visible;
+        transform: translateX(-100%);
+    }
+}
+
+.nav-scroller .nav {
+    color: rgba(255, 255, 255, .75);
+}
+
+.nav-scroller .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+    color: #6c757d;
+}
+
+.nav-scroller .nav-link:hover {
+    color: #007bff;
+}
+
+.nav-scroller .active {
+    font-weight: 500;
+    color: #343a40;
+}
+
+.bg-purple {
+    background-color: #6f42c1;
+}
+
+/* off canvas bootstrap fim */
+
+/*CUSTOM CSS INICIO*/
+
+/* geral tags inicio */
+
+h1 {
+    color: #ffffff;
+    font-size: 4rem;
+}
+
+p {
+    color: #212121;
+}
+
+section {
+    padding: 125px 0;
+}
+
+/* footer {
+} */
+
+#contentPage{
+    position: relative;
+    top: 69px;
+}
+
+/* geral tags fim */
+
+/* header inicio */
+.headerContent {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logoImage {
+    width: 260px;
+}
+
+#navBar {
+    flex-grow: 0;
+}
+/* header fim */
+
+/* section inicio */
+
+#inicio {
+    background-color: #212121;
+}
+
+.topMask {
+    clip-path: polygon(0 0,100% 0,100% calc(100% - var(--size)),50% 100%,0 calc(100% - var(--size)));
+}
+
+.bottomMask {
+    clip-path: polygon(0 0,50% var(--size),100% 0,100% 100%,0 100%);
+    margin-top: calc(var(--gap) - var(--size));
+}
+
+.conteudoApresentacao {
+    max-width: 1200px;
+}
+
+.apresentacaoOla, .apresentacaoSobre, .apresentacaoExperiencia {
+    line-height: 0px;
+    margin-bottom: 5px;
+}
+
+/* .apresentacaoNome {
+} */
+
+.apresentacaoOla, .apresentacaoResumo, .apresentacaoContato {
+    color: #ffffff;
+}
+
+.fotoMaciel, .fotoMacielKenaz,.fotoMacielContato1 {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+/* section inicio fim */
+
+/* section sobre inicio */
+
+#sobre {
+    background-color: #00796B;
+    padding: 120px 0;
+}
+
+#sobre p, .tituloSobre {
+    color: #ffffff;
+}
+
+/* section sobre fim */
+
+/* section experiencia inicio */
+#experiencia {
+    background-color: #FFC107;
+    padding: 120px 0;
+}
+
+.conhecimentosTecnicos {
+    width: 100%;
+    background-color: #ddd;
+}
+
+
+.textoExperiencia {
+    line-height: 0px;
+    margin-bottom: 15px;;
+}
+#html {
+    width: 0%;
+    height: 30px;
+    background-color: #04AA6D;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+#css {
+    width: 0%;
+    height: 30px;
+    background-color: #00BCD4;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+#javascript {
+    width: 0%;
+    height: 30px;
+    background-color: #512DA8;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+.btn-experiencia {
+    margin: 20px 0;
+}
+/* section experiencia fim*/
+
+/* section contato inicio */
+#contato {
+    background-color: #512DA8;
+    padding: 120px 0;
+}
+
+#contato p {
+    color: #ffffff;
+}
+
+.form label {
+    color: #ffffff;
+}
+
+.enviar {
+    margin-bottom: 30px;
+    width: 100%;;
+}
+
+.fotoMacielContato2 {
+    border-radius: 30% 30% 70% 70% / 30% 30% 70% 70%;
+}
+
+
+/* section contato fim */
+
+/* Footer inicio */
+.text-muted {
+    color: #fff !important;
+}
+
+/* Footer fim */
+
+/* media queyrs inicio*/
+@media (min-width: 576px) {
+    .fotoMacielContato2 {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .fotoMacielContato1 {
+        display: none;
+    }
+}
+
+/* media querys fim */
